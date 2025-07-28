@@ -2,17 +2,20 @@ import './DROSimulator.css';
 
 export interface DROSimulatorProps {
   className?: string;
+  xValue?: number;
+  yValue?: number;
+  zValue?: number;
 }
 
-export function DROSimulator({ className }: DROSimulatorProps) {
+export function DROSimulator({ className, xValue = 0, yValue = 0, zValue = 0 }: DROSimulatorProps) {
   return (
     <div className={className}>
       <main id="dro">
         {/* Three‑line read‑out */}
         <section className="display" aria-label="Machine position readouts">
-          <output name="x">259.085</output>
-          <output name="y">74.000</output>
-          <output name="z">6.1380</output>
+          <output name="x">{xValue.toFixed(3)}</output>
+          <output name="y">{yValue.toFixed(3)}</output>
+          <output name="z">{zValue.toFixed(3)}</output>
         </section>
 
         {/* Axis zero/select */}
