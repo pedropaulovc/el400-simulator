@@ -19,12 +19,12 @@ test.describe('DRO Simulator', () => {
     // Check axis panel buttons
     const axisPanel = page.locator('aside.axis-panel');
     await expect(axisPanel).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'X' })).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'X0' })).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'Y' })).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'Y0' })).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'Z' })).toBeVisible();
-    await expect(axisPanel.locator('button', { hasText: 'Z0' })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'X', exact: true })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'X0', exact: true })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'Y', exact: true })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'Y0', exact: true })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'Z', exact: true })).toBeVisible();
+    await expect(axisPanel.getByRole('button', { name: 'Z0', exact: true })).toBeVisible();
 
     // Check numeric keypad
     const keypad = page.locator('nav.keypad');
@@ -80,7 +80,7 @@ test.describe('DRO Simulator', () => {
     await expect(numericButton).toBeVisible();
     await numericButton.click();
 
-    const axisButton = page.locator('aside.axis-panel button', { hasText: 'X' });
+    const axisButton = page.locator('aside.axis-panel').getByRole('button', { name: 'X', exact: true });
     await expect(axisButton).toBeVisible();
     await axisButton.click();
 
