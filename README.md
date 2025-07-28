@@ -1,4 +1,4 @@
-# EL400 Simulator
+# EL400 Digital Readout (DRO) Simulator
 
 A faithful web-based simulator for the Electronica EL400 (a.k.a. MagXact MX-100M) digital readout (DRO) system.
 
