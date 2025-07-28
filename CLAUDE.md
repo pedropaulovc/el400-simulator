@@ -66,7 +66,12 @@ e2e/               # Playwright E2E tests
 ## Git Workflow - CRITICAL REQUIREMENTS
 ⚠️ **STRICT ADHERENCE REQUIRED** - These git workflow rules are mandatory and must be followed exactly:
 
-- **Commit frequently**: Immediately after making any self-contained code change, regardless of size - NO EXCEPTIONS
-- **Use Task tool for git operations**: NEVER call git commands directly from main thread - this will cause errors
-- **Auto-push when todo list complete**: ALWAYS push to remote after finishing all todos in a list
-- **Always run lint and tests before commits**: Ensure code quality before committing - failing tests block commits
+- **Auto-commit after EVERY change**: You MUST commit immediately after ANY file modification, no matter how small - NO EXCEPTIONS. This includes:
+  - Single line edits
+  - Configuration changes
+  - Code refactoring
+  - ANY file creation or deletion
+- **Use Task tool for git operations**: ALWAYS use the Task tool to run git commands - NEVER call git directly from main thread
+- **Commit first, ask questions later**: Do NOT wait for user confirmation before committing. Commit immediately after making changes
+- **Push frequently**: Push after every few commits or when completing a logical unit of work
+- **Include lint/test status in commits**: Run lint before committing. If there are failures, fix them if possible or note in commit message and proceed
