@@ -63,8 +63,10 @@ docs/manuals/      # Physical DRO reference manuals (PDFs)
 e2e/               # Playwright E2E tests
 ```
 
-## Git Workflow
-- **Commit frequently**: After completing each meaningful change or todo item
-- **Use Task tool for git operations**: Never call git commands directly from main thread
-- **Auto-push when todo list complete**: Push to remote after finishing all todos in a list
-- **Always run lint and tests before commits**: Ensure code quality before committing
+## Git Workflow - CRITICAL REQUIREMENTS
+⚠️ **STRICT ADHERENCE REQUIRED** - These git workflow rules are mandatory and must be followed exactly:
+
+- **Commit frequently**: After completing each meaningful change or todo item - NO EXCEPTIONS
+- **Use Task tool for git operations**: NEVER call git commands directly from main thread - this will cause errors
+- **Auto-push when todo list complete**: ALWAYS push to remote after finishing all todos in a list
+- **Always run lint and tests before commits**: Ensure code quality before committing - failing tests block commits
