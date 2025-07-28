@@ -96,4 +96,38 @@ test.describe('DRO Simulator', () => {
   test('has correct page title and metadata', async ({ page }) => {
     await expect(page).toHaveTitle('EL400 DRO Simulator');
   });
+
+  test('uses 7-segment font for display readouts', async ({ page }) => {
+    // Wait for the page to fully load
+    await page.waitForLoadState('networkidle');
+    
+    // Check that display outputs use the Seven Segment font
+    const displayOutputs = page.locator('section.display output');
+    await expect(displayOutputs).toHaveCount(3);
+    
+    // Verify font family is applied to each output
+    for (let i = 0; i < 3; i++) {
+      const output = displayOutputs.nth(i);
+      await expect(output).toBeVisible();
+      
+      // Check computed style includes Seven Segment font
+      const fontFamily = await output.evaluate((el) => {
+        return window.getComputedStyle(el).fontFamily;
+      });
+      
+      expect(fontFamily).toContain('Seven Segment');
+    }
+    
+    // Test font loading by checking if font resources are available
+    const fontLoadStatus = await page.evaluate(async () => {
+      // Check if the font is loaded
+      await document.fonts.ready;
+      const sevenSegmentFont = [...document.fonts].find(font => 
+        font.family === 'Seven Segment'
+      );
+      return sevenSegmentFont ? sevenSegmentFont.status : 'not-found';
+    });
+    
+    expect(fontLoadStatus).toBe('loaded');
+  });
 });
