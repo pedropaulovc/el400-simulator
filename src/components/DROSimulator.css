@@ -1,3 +1,13 @@
+/********************  FONT DEFINITIONS  ********************/
+@font-face {
+  font-family: "Seven Segment";
+  src: url("/fonts/7segment.woff") format("woff"),
+       url("/fonts/7segment.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /********************  DESIGN TOKENS  *************************/
 :root{
   --gap: 1rem;                  /* standard spacing */
