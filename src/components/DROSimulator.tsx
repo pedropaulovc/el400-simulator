@@ -1,15 +1,14 @@
 import './DROSimulator.css';
 
 export interface DROSimulatorProps {
-  className?: string;
   xValue?: number;
   yValue?: number;
   zValue?: number;
 }
 
-export function DROSimulator({ className, xValue = 0, yValue = 0, zValue = 0 }: DROSimulatorProps) {
+export function DROSimulator({ xValue = 0, yValue = 0, zValue = 0 }: DROSimulatorProps) {
   return (
-    <div className={className}>
+    <div>
       <main id="dro">
         {/* Three‑line read‑out */}
         <section className="display" aria-label="Machine position readouts">
