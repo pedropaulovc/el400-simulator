@@ -1,0 +1,14 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ruler base -->
+  <rect x="2" y="10" width="20" height="4" fill="currentColor"/>
+  <!-- Ruler markings -->
+  <line x1="4" y1="8" x2="4" y2="16" stroke="currentColor" stroke-width="1"/>
+  <line x1="8" y1="9" x2="8" y2="15" stroke="currentColor" stroke-width="1"/>
+  <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="1"/>
+  <line x1="16" y1="9" x2="16" y2="15" stroke="currentColor" stroke-width="1"/>
+  <line x1="20" y1="8" x2="20" y2="16" stroke="currentColor" stroke-width="1"/>
+  <!-- Left arrow (ABS) -->
+  <path d="M6 4l-2 2 2 2V6h4V4H6z" fill="currentColor"/>
+  <!-- Right arrow (INC) -->
+  <path d="M18 18l2-2-2-2v2h-4v2h4z" fill="currentColor"/>
+</svg>
