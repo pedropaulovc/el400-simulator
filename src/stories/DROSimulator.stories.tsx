@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/nextjs';
-import React from 'react';
 
 import { DROSimulator } from '@/components/DROSimulator';
 
@@ -15,12 +14,7 @@ const meta = {
     },
   },
   tags: ['autodocs'],
-  argTypes: {
-    className: {
-      control: 'text',
-      description: 'Additional CSS classes to apply to the component',
-    },
-  },
+  argTypes: {},
 } satisfies Meta<typeof DROSimulator>;
 
 export default meta;
