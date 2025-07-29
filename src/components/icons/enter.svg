@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Enter arrow -->
+  <path d="M19 7v4H8l3-3-1.41-1.41L4.17 12l5.42 5.41L11 16l-3-3h11V7h-1z" fill="currentColor"/>
+  <!-- "ent" text -->
+  <text x="16" y="18" font-family="monospace" font-size="5" fill="currentColor">ent</text>
+</svg>

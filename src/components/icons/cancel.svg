@@ -1,0 +1,5 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- "C" letter -->
+  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c1.54 0 3-.35 4.31-.99l-1.45-1.45C13.88 19.85 12.96 20 12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8v.5h-2V12c0-3.31-2.69-6-6-6s-6 2.69-6 6 2.69 6 6 6c.34 0 .68-.03 1-.09v2.07C12.67 19.97 12.34 20 12 20z" fill="currentColor"/>
+  <text x="12" y="16" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="white">C</text>
+</svg>

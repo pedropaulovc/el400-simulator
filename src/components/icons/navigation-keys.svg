@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Up arrow with "8" -->
+  <rect x="8" y="2" width="8" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M12 4l-2 2h1v2h2V6h1l-2-2z" fill="currentColor"/>
+  <text x="12" y="9" text-anchor="middle" font-family="monospace" font-size="4" fill="currentColor">8</text>
+  
+  <!-- Down arrow with "2" -->
+  <rect x="8" y="14" width="8" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M12 20l2-2h-1v-2h-2v2h-1l2 2z" fill="currentColor"/>
+  <text x="12" y="17" text-anchor="middle" font-family="monospace" font-size="4" fill="currentColor">2</text>
+</svg>
