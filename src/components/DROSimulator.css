@@ -54,14 +54,17 @@ section.display output{display:flex;align-items:center;justify-content:flex-end;
 section.display output:last-child{border-bottom:none;}
 
 /********************  AXIS SELECT  **************************/
-aside.axis-panel{grid-area:axis;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:1fr;gap:var(--gap);}
+fieldset.axis-panel{grid-area:axis;display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:1fr;gap:var(--gap);border:none;padding:0;margin:0;}
 
 /********************  NUMERIC KEYPAD  ***********************/
-nav.keypad{grid-area:keypad;display:grid;gap:var(--gap);grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(5,1fr);grid-template-areas:"b7 b8 b9""b4 b5 b6""b1 b2 b3""pm b0 dot""c  ent ent";}
+fieldset.keypad{grid-area:keypad;display:grid;gap:var(--gap);grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(5,1fr);grid-template-areas:"b7 b8 b9""b4 b5 b6""b1 b2 b3""pm b0 dot""c  ent ent";border:none;padding:0;margin:0;}
 
 /********************  TOOLBARS ******************************/
-nav.bottom{grid-area:bottom;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);}
-nav.fkeys{grid-area:fkeys;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);gap:var(--gap);}
+fieldset.bottom{grid-area:bottom;display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap);border:none;padding:0;margin:0;}
+fieldset.fkeys{grid-area:fkeys;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);gap:var(--gap);border:none;padding:0;margin:0;}
+
+/********************  FIELDSET LEGENDS  ********************/
+fieldset legend{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
 
 /********************  CONTROLS  *****************************/
 button{width:100%;aspect-ratio:1/1;border:var(--border);border-radius:6px;background:var(--bg-btn);font-weight:600;cursor:pointer;}
