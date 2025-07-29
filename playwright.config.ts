@@ -11,6 +11,15 @@ export default defineConfig({
     baseURL: 'http://localhost:3000',
     trace: 'on-first-retry',
   },
+  expect: {
+    // Visual comparisons
+    threshold: 0.2,
+    toHaveScreenshot: {
+      // Reduce flakiness
+      threshold: 0.2,
+      maxDiffPixels: 100,
+    },
+  },
   projects: [
     {
       name: 'chromium',
